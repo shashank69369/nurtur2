@@ -1,0 +1,196 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #4CAF50;
+    color: rgb(241, 240, 240);
+}
+
+/* Navigation styles */
+nav {
+    background-color: #0a0909;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+    border-radius: 3px;
+}
+
+/* Container and section styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Services list styles */
+ul {
+    list-style-position: inside;
+    padding: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0b0a0a;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #100f0f;
+    color: white;
+}
+
+.dark-mode section {
+    background-color: #2ca707;
+}
+
+/* Theme toggle button */
+button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+button:hover {
+    background-color: #32a838;
+}
+/* ... existing code ... */
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-image: url('C:\Users\ASUS\Downloads\marisol-benitez-QvkAQTNj4zk-unsplash.jpg');  /* Add your header image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+
+/* Add an overlay to ensure text is readable */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Ensure header content stays above overlay */
+header h1, header p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Section background styles */
+#home {
+    background-image: url('C:\Users\ASUS\Downloads');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    padding: 3rem 1rem;
+}
+
+#services {
+    background-image: url('images/services-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    padding: 3rem 1rem;
+}
+
+#about {
+    background-image: url('images/about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    padding: 3rem 1rem;
+}
+
+#contact {
+    background-image: url('images/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    padding: 3rem 1rem;
+}
+
+/* Add overlay to all sections with background images */
+#home::before,
+#services::before,
+#about::before,
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Ensure section content stays above overlay */
+section h2,
+section p,
+section ul {
+    position: relative;
+    z-index: 2;
+}
+
+/* Dark mode adjustments */
+.dark-mode section::before {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker overlay for dark mode */
+}
+
+/* ... rest of existing code ... */
